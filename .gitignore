@@ -1,0 +1,30 @@
+# Unrelated personal script, not part of this project
+Monte Calro of VWINX.py
+
+# Personal Claude Code settings, not shared config
+.claude/settings.local.json
+
+# Personal trading data - not for a public repo
+chain/positions.csv
+chain/positions.csv.bak*
+
+# Secrets / credentials
+dolt/token.txt
+
+# Local Dolt database state (not source)
+dolt/.dolt/
+dolt/.doltcfg/
+
+# Regenerable caches
+chain/chain_cache/
+chain/backtest_cache/
+chain/lookup_cache.json
+chain/voldata_cache.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated output
+chain/sweep_dist.png
+chain/sweep_dist2.png

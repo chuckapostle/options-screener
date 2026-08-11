@@ -1,0 +1,59 @@
+log_level: info
+log_format: text
+
+behavior:
+  read_only: false
+  autocommit: true
+  disable_client_multi_statements: false
+  dolt_transaction_commit: false
+  event_scheduler: "ON"
+  auto_gc_behavior:
+    enable: false
+    archive_level: 0
+
+listener:
+  host: localhost
+  port: 3306
+  max_connections: 1000
+  back_log: 50
+  max_connections_timeout_millis: 60000
+  read_timeout_millis: 28800000
+  write_timeout_millis: 28800000
+  ca_cert: null
+  tls_key: null
+  tls_cert: null
+  require_client_cert: null
+  require_secure_transport: null
+  allow_cleartext_passwords: null
+
+max_logged_query_len: 0
+
+data_dir: .
+cfg_dir: .doltcfg
+privilege_file: .doltcfg/privileges.db
+branch_control_file: .doltcfg/branch_control.db
+
+# Advanced Configuration
+metrics:
+  labels: {}
+  host: null
+  port: -1
+
+remotesapi:
+  port: null
+  read_only: null
+
+mcp_server:
+  port: 7007
+  user: root
+  password: ""
+  database: ""
+
+system_variables: {}
+
+user_session_vars: []
+
+jwks: []
+
+# Cluster configuration has required defaults.
+# cluster: {}
